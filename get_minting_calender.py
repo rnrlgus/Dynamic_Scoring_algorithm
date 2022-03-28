@@ -11,7 +11,8 @@ def get_minting_calender(url):
         html = response.content
         soup = BeautifulSoup(html, 'html.parser')
         
-        tmp = soup.select("#weeks-container")
+        #tmp = soup.select("#weeks-container")
+        tmp = soup.select('#weeks-container > div:nth-child(1) > div.day.ng-scope.inactive > div.events > div:nth-child(1) > a > span')
         
         print(tmp)
         
