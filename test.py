@@ -3,4 +3,3 @@ tmp2 = 'https://plugin.eventscalendar.co/widget.html?pageId=lysrv&compId=comp-kx
 for i in range(len(tmp)):
     if tmp[i] != tmp2[i]:
         print("Asdasdasd")
-print("!!")
