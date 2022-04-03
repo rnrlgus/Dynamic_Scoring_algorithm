@@ -1,11 +1,11 @@
 import tweepy
 
 # 트위터 API 접근 위한 개인 키
-consumer_key = "B3F001geiM7DhEU2KJq9ZMSR7"
-consumer_secret = "udYuR00FlZfN3VlELxJLOeU3skyQ4GuFZoz4YlTiXkXnGhwoVa"
+consumer_key = ""
+consumer_secret = ""
 
-access_token = "1507624609973440514-kezI6ZCh7JqiftVGLUPIk5jzByZAJS"
-access_token_secret = "7dIyBuO7hD7nUOdyCLQROtIXRJu5bxSuY0CD8vyuijQAF"
+access_token = ""
+access_token_secret = ""
 
 # OAuth 핸들러 생성 & 개인정보 인증 요청
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
