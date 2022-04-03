@@ -20,6 +20,9 @@ def get_minting_calender(url):
     items[10].click() # 팝업창 띄우기 하나 완성하고 나중에 반복문으로 다 돌아야함
     
     item = driver.find_element(By.CSS_SELECTOR, '#weeks-container > div:nth-child(1) > div:nth-child(4) > div.events > div:nth-child(3) > div > div.full-height > div > div > div.popup-main.atc-parent > div')
+    #weeks-container > div:nth-child(2) > div:nth-child(2) > div.events > div:nth-child(3) > div > div.full-height > div > div > div.popup-main.atc-parent
+    #weeks-container > div:nth-child(2) > div:nth-child(1) > div.events > div > div > div.full-height > div > div > div.popup-main.atc-parent > div
+    # item마다 다 달라........ ㅠㅠ 클릭했을때 popup 부분을 find_element 활용해서 해봐야겠음
     tmp = item.get_attribute('outerHTML') # 팝업창 html 소스 (문자열 형태)
     print(tmp)
     print("------------------------------------------------------------------------------------------------")
